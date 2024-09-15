@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {images.flat(Infinity).map((x, i) => (
-          <link rel="preload" as="image" href={x} key={i} />
+          <link rel="preload" as="image" href={`/${x}.png`} key={i} />
         ))}
       </head>
       <body className={inconsolata.className}>{children}</body>
