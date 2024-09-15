@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {images.map((x) => (
-          <link rel="preload" as="image" href={x} />
+        {images.map((x, i) => (
+          <link rel="preload" as="image" href={x} key={i} />
         ))}
       </head>
       <body className={inconsolata.className}>{children}</body>
