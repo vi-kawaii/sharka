@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {images.map((x, i) => (
+        {images.flat(Infinity).map((x, i) => (
           <link rel="preload" as="image" href={x} key={i} />
         ))}
       </head>
