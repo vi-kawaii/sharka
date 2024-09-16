@@ -40,7 +40,7 @@ export default function Home() {
               text={x.slice(0, -2)}
               img={x}
               key={i}
-              onClick={() => setCur("cry-1")}
+              onClick={() => setCur(x)}
             />
           ))}
       </div>
