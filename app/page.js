@@ -31,6 +31,7 @@ export default function Home() {
     <div className="flex select-none">
       <div className="w-[512px] h-[512px]">
         <Image
+          className="animate-breath"
           unoptimized
           alt=""
           src={`/${cur}.png`}
